@@ -1,0 +1,18 @@
+body{
+  background-image: url("img/img.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 130px;
+}
+.container{
+	border: solid color:black;
+	padding: 30px;
+    box-shadow: 10px 10px 20px 20px rgba(0,0,0,0.7);
+}
+p{
+	font-size: 12px
+}
+.fix-rounded-right {
+  border-top-right-radius: .2rem !important;
+  border-bottom-right-radius: .2rem !important;
+}
