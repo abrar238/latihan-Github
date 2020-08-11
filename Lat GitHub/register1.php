@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>register</title>
 </head>
 <body>
 
-<from method="post" action="simpan.php">
+<from method="POST" action="simpan.php">
 		<table>
 			<tr>
 				<td>No</td>
@@ -17,14 +17,14 @@
 			</tr>
 			<tr>
 				<td>Alamat</td>
-				<td><input type="text" name="alamat"/></td>
+				<td><textarea name="alamat"></textarea></td>
 			</tr>
 			<tr>
 				<td>Telp</td>
 				<td><input type="text" name="telp"/></td>
 			</tr>
 			<tr>
-				<td><input type="submit" value="simpan"/></td>
+				<td><input type="submit" value="submit" name="submit"/></td>
 			</tr>
 		</table>
 	</from>
