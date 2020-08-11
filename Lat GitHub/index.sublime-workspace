@@ -1,0 +1,577 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"else",
+				"elseif\telseif …"
+			],
+			[
+				"strto",
+				"strtotime"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"opt",
+				"option\tTag"
+			],
+			[
+				"exe",
+				"execute"
+			],
+			[
+				"Sele",
+				"SELECT"
+			],
+			[
+				"t",
+				"title\tAttr"
+			],
+			[
+				"FETCH",
+				"FETCH_NUM"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"o",
+				"option\tTag"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"tree",
+				"treeview"
+			],
+			[
+				"Jo",
+				"JobOrderNo"
+			],
+			[
+				"Id",
+				"IdPurchaseRequest"
+			],
+			[
+				"IdHa",
+				"IdDaftarHarga"
+			],
+			[
+				"di",
+				"div\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "menu.php",
+			"settings":
+			{
+				"buffer_size": 2562,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data/mk_kategori/page.php",
+			"settings":
+			{
+				"buffer_size": 5490,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data/mk_kategori/proses.php",
+			"settings":
+			{
+				"buffer_size": 1321,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data/mk_aset/page.php",
+			"settings":
+			{
+				"buffer_size": 8588,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data/mk_pengguna/page.php",
+			"settings":
+			{
+				"buffer_size": 4916,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data/mk_pengguna/proses.php",
+			"settings":
+			{
+				"buffer_size": 3868,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "proses.php"
+			}
+		},
+		{
+			"file": "pageorder.php",
+			"settings":
+			{
+				"buffer_size": 674,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"//10.10.13.4/jse-siaset",
+		"//10.10.13.4/jse-siaset/data",
+		"//10.10.13.4/jse-siaset/data/mk_aset",
+		"//10.10.13.4/jse-siaset/data/mk_kategori",
+		"//10.10.13.4/jse-siaset/data/mk_pengguna",
+		"//10.10.13.4/jse-siaset/lib"
+	],
+	"file_history":
+	[
+		"//10.10.13.4/jse-siaset/login.php",
+		"//10.10.13.4/jse-siaset/data/mk_aset/proses.php",
+		"//10.10.13.4/jse-siaset/proseslogin.php",
+		"//10.10.13.4/jse-siaset/data/mk_aset/page.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp08660/var/www/html/siaset/data/mk_kategori/page.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp11645/var/www/html/siaset/menu.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp07690/var/www/html/siaset/connect.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp10652/var/www/html/siaset/pageorder.php",
+		"/D/Github/Belajar/index.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp12612/var/www/html/new/config/function_library.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp12243/var/www/html/new/config/function.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp11318/var/www/html/new/inc/WH/PurchaseRequest/proses.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp37376/var/www/html/amsit3/connect.php",
+		"/C/Users/C01-001/Downloads/sinkron_juhdisakti (3).sql",
+		"/C/Users/C01-001/AppData/Local/Temp/scp21087/var/www/html/onlineform/modul/PrintData/PrintAdvanceRequisition.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp45363/var/www/html/amsit3/data/ms_aset/page.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp13246/var/www/html/amsit3/data/ms_aset/proses.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp08156/var/www/html/amsit3/data/ms_pengguna/proses.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp08596/var/www/html/amsit3/data/ms_pengguna/page.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp45526/var/www/html/amsit3/data/ms_vendor/proses.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp16572/var/www/html/amsit3/home.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp35658/var/www/html/amsit3/data/ms_vendor/page.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp37782/var/www/html/amsit3/pageorder.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp32466/var/www/html/amsit3/data/ms_kategori/page.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp35264/var/www/html/amsit3/data/ms_kategori/proses.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp57549/var/www/html/amsit3/lib/lib.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp55126/var/www/html/amsit/module/maset/proses2.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp55412/var/www/html/amsit/module/kat/proses.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp16022/var/www/html/amsit/module/maset/proses.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp13246/var/www/html/amsit3/data/ms_aset/nn.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp15447/var/www/html/amsit3/data/ms_tipeaset/page.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp24571/var/www/html/amsit3/data/ms_tipeaset/proses.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/home 2.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/page 4.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/proses 2.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/proses2.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/form 3.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/proses.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/proses 3.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/page 3.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/lib 2.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/lib.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/form 2.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/page 2.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/pageorder.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/header.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/index.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/page.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/home 3.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/home.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/module.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/form.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/menuhome.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-2/menu.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp44070/var/www/html/new/js/MainWH.js",
+		"/C/Users/C01-001/AppData/Local/Temp/scp21688/var/www/html/new/inc/WH/MaterialPlan/proses.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp21867/var/www/html/new/inc/WH/MaterialPlan/detail.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp07048/var/www/html/new/inc/WH/MaterialRequest/proses.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp07357/var/www/html/new/inc/WH/MaterialRequest/detail.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp25081/var/www/html/new/FileSurat/SuratPrchaseRequest.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp43659/var/www/html/new/FileSurat/SuratMRR.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp48368/var/www/html/new/inc/WH/MRR/proses.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp43088/var/www/html/new/FileSurat/SuratAR.php",
+		"/C/Users/C01-001/AppData/Local/Temp/scp34435/var/www/html/new/config/connect.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-3/connect.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-3/detail.php",
+		"/C/Users/C01-001/AppData/Local/Temp/fz3temp-3/proses.php"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"php",
+			"div",
+			">\n",
+			"php"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "menu.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1318,
+								1318
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "data/mk_kategori/page.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								756,
+								756
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "data/mk_kategori/proses.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								999,
+								999
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "data/mk_aset/page.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8588,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1189,
+								784
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "data/mk_pengguna/page.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4916,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								794,
+								794
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "data/mk_pengguna/proses.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3868,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								565,
+								565
+							]
+						],
+						"settings":
+						{
+							"auto_name": "proses.php",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "pageorder.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								441,
+								450
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
