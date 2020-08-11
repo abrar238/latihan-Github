@@ -1,10 +1,16 @@
 <?php
 
-$koneksi = mysqli_connect("localhost","root","","latihan");
+$server = "localhost";
+$user = "root";
+$password = "";
+$nama_database = "latihan";
 
 
-if (mysqli_connect_errno()) {
-	echo "koneksi gagal: ". mysqli_connect_error();
+$koneksi = mysqli_connect($server,$user,$password,$nama_database);
+
+
+if(!$koneksi){
+	die("gagal terhubung:".mysqli_connect_error());
 }
 
 ?>
