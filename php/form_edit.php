@@ -89,13 +89,21 @@ if( mysqli_num_rows($query) < 1 ){
     <form class="needs-validation" novalidate action="edit.php" method="POST">
 
 	<div class="col-md-3 ">
-      <label for="no">No</label>
-      <input type="text" class="form-control" id="no" name="no" value="<?php echo $anggota['no'] ?>">
+      <input type="hidden" class="form-control" id="no" name="no" value="<?php echo $anggota['no'] ?>" >
     </div>
     <br>
     <div class="col-md-3 ">
       <label for="nama">Nama</label>
       <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $anggota['nama'] ?>">
+    </div>
+    <br>
+    <div class="col-md-3 ">
+    <label for="jk">Jenis Kelamin</label>
+    <?php $jk=$anggota['jk'] ?>
+    <select class="form-control" id="jk" name="jk">
+      <option <?php echo ($jk == 'Laki-Laki')? "selected":""?> >Laki-Laki</option>
+      <option <?php echo ($jk == 'Perempuan')? "selected":""?> >Perempuan</option>
+    </select>
     </div>
     <br>
     <div class="col-md-6 ">

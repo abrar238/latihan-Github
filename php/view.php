@@ -78,6 +78,7 @@
 		<tr>
 			<th>No</th>
 			<th>Nama</th>
+      <th>Jenis Kelamin</th>
 			<th>Alamat</th>
 			<th>Telp</th>
       <th>Email</th>
@@ -91,6 +92,7 @@
 			echo "<tr>";
 			echo "<td>".$anggota['no']."</td>";
 			echo "<td>".$anggota['nama']."</td>";
+      echo "<td>".$anggota['jk']."</td>";
 			echo "<td>".$anggota['alamat']."</td>";
 			echo "<td>".$anggota['telp']."</td>";
       echo "<td>".$anggota['email']."</td>";
