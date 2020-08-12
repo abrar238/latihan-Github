@@ -78,6 +78,14 @@
       <input type="text" class="form-control" id="nama" name="nama">
     </div>
     <br>
+    <div class="col-md-3 ">
+    <label for="jk">Jenis Kelamin</label>
+    <select class="form-control" id="jk" name="jk">
+      <option>Laki-Laki</option>
+      <option>Perempuan</option>
+    </select>
+  </div>
+    <br>
     <div class="col-md-6 ">
       <label for="Alamat">Alamat</label>
       <textarea class="form-control" id="alamat" name="alamat"></textarea> 

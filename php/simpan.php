@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
     $email = $_POST['email'];
 
 
-    $sql = "INSERT INTO register (no, nama, alamat, telp, email) VALUE ('$no', '$nama', '$alamat', '$telp', '$email')";
+    $sql = "INSERT INTO register (no, nama, jk, alamat, telp, email) VALUE ('$no', '$nama', '$jk', '$alamat', '$telp', '$email')";
     $query = mysqli_query($koneksi, $sql);
 
     if( $query ) {

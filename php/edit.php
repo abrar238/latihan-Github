@@ -10,7 +10,7 @@ if(isset($_POST['simpan'])){
     $email = $_POST['email'];
 
 
-    $sql = "UPDATE register SET nama='$nama', alamat='$alamat', telp='$telp', email='$email' WHERE no='$no'";
+    $sql = "UPDATE register SET nama='$nama', jk='$jk', alamat='$alamat', telp='$telp', email='$email' WHERE no='$no'";
     $query = mysqli_query($koneksi, $sql);
 
     if( $query ) {
@@ -21,5 +21,4 @@ if(isset($_POST['simpan'])){
 } else {
     die("akses ditolak");
 }
-
 ?>
