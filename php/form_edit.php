@@ -97,12 +97,17 @@ if( mysqli_num_rows($query) < 1 ){
       <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $anggota['nama'] ?>">
     </div>
     <br>
+
+
     <div class="col-md-3 ">
+    <?php  $jk=$anggota['jk'] ?>
     <label for="jk">Jenis Kelamin</label>
-    <?php $jk=$anggota['jk'] ?>
     <select class="form-control" id="jk" name="jk">
+      <option value="NULL" name='chosse'>---chosse---</option>
       <option <?php echo ($jk == 'Laki-Laki')? "selected":""?> >Laki-Laki</option>
       <option <?php echo ($jk == 'Perempuan')? "selected":""?> >Perempuan</option>
+        
+
     </select>
     </div>
     <br>

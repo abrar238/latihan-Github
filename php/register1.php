@@ -64,6 +64,9 @@
     </form>
   </div>
 </nav>
+
+
+
 <div class="container">
     <h3>Register</h3>
 <form class="needs-validation" novalidate action="simpan.php" method="POST">
@@ -78,12 +81,14 @@
       <input type="text" class="form-control" id="nama" name="nama">
     </div>
     <br>
-    <div class="col-md-3 ">
-    <label for="jk">Jenis Kelamin</label>
-    <select class="form-control" id="jk" name="jk">
-      <option>Laki-Laki</option>
-      <option>Perempuan</option>
+
+    <div class="col-md-3">
+    <select class="form-control" id="jk" name="jk" required>
+      <option value="" >Choose</option>
+      <option value="1">Laki-Laki</option>
+      <option value="2">Perempuan</option>
     </select>
+    <div class="invalid-feedback">Example invalid custom select feedback</div>
   </div>
     <br>
     <div class="col-md-6 ">
