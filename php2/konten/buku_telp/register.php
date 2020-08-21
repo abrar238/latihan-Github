@@ -4,12 +4,12 @@
 
           <div class="col-md-3 ">
               <label for="no">No</label>
-              <input type="text" class="form-control" id="no" name="no" >
+              <input type="text" class="form-control" id="no" name="no" required>
             </div>
             <br>
             <div class="col-md-3 ">
               <label for="nama">Nama</label>
-              <input type="text" class="form-control" id="nama" name="nama">
+              <input type="text" class="form-control" id="nama" name="nama" required>
             </div>
             <br>
 
@@ -46,17 +46,17 @@
 
             <div class="col-md-6 ">
               <label for="Alamat">Alamat</label>
-              <textarea class="form-control" id="alamat" name="alamat"></textarea> 
+              <textarea class="form-control" id="alamat" name="alamat" required></textarea> 
             </div>
             <br>
             <div class="col-md-3 ">
               <label for="telp">Telp</label>
-              <input type="text" class="form-control" id="telp" name="telp">
+              <input type="text" class="form-control" id="telp" name="telp" required>
             </div>
             <br>
             <div class="col-md-3 ">
               <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" name="email">
+              <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <br>
           
