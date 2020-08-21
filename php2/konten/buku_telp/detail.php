@@ -31,7 +31,7 @@
         echo "<td>".$anggota['email']."</td>";
         echo "<td>";
         echo "<a class='btn btn-info' href='?hal=edit&no=".$anggota['no']."'>edit</a>";
-        echo "<a class='btn btn-danger' href='delete.php? no=".$anggota['no']."'>delete</a>";
+        echo "<a class='btn btn-danger' href='?hal=delete&no=".$anggota['no']."'>delete</a>";
         echo "</td>";
         echo "</tr>";
       }

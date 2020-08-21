@@ -1,5 +1,4 @@
 <?php
-include("koneksi.php");
 if(!isset($_GET['no']) ){
     header('location:?hal=kontak');
 }
@@ -19,7 +18,7 @@ if( mysqli_num_rows($query) < 1 ){
 <div class="container">
          <h3>Edit Data Anggota</h3>
          <h5><a href="?hal=kontak" class="btn btn-primary">[kembali ke home]</a></h5>
-        <form class="needs-validation" novalidate action="edit.php" method="POST">
+        <form class="needs-validation" novalidate action="?hal=ubah" method="POST">
 
       <div class="col-md-3 ">
           <input type="hidden" class="form-control" id="no" name="no" value="<?php echo $anggota['no'] ?>" >
@@ -36,7 +35,7 @@ if( mysqli_num_rows($query) < 1 ){
         <select class="form-control" id="jabatan" name="jabatan">
           <option value="NULL" name='chosse'>---chosse---</option>
           <option <?php echo ($jabatan == 'Operator')? "selected":""?> >Operator</option>
-          <option <?php echo ($jabatan == 'LeaderLeader')? "selected":""?> >Leader</option>
+          <option <?php echo ($jabatan == 'Leader')? "selected":""?> >Leader</option>
           <option <?php echo ($jabatan == 'Supervisor')? "selected":""?> >Supervisor</option>
           <option <?php echo ($jabatan == 'Sekertaris')? "selected":""?> >Sekertaris</option>
           <option <?php echo ($jabatan == 'Manager')? "selected":""?> >Manager</option>

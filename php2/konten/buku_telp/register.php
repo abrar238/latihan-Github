@@ -1,6 +1,6 @@
 <div class="container">
             <h3>Register</h3>
-        <form class="needs-validation" novalidate action="simpan.php" method="POST">
+        <form class="needs-validation" novalidate action="?hal=simpan" method="POST">
 
           <div class="col-md-3 ">
               <label for="no">No</label>
@@ -17,11 +17,11 @@
             <label for="nama">Jabatan</label>
             <select class="form-control" id="jabatan" name="jabatan" required>
               <option value="" >Choose</option>
-              <option >Operator</option>
-              <option >Leader</option>
-              <option >Supervisor</option>
-              <option >Assisten Manager</option>
-              <option>Manager</option>
+              <option value="Operator" >Operator</option>
+              <option value="Leader" >Leader</option>
+              <option value="Supervisor">Supervisor</option>
+              <option value="Sekertaris">Sekertaris</option>
+              <option value="Manager">Manager</option>
             </select>
             </div>
             <br>
@@ -35,11 +35,11 @@
               <label for="nama">Agama</label>
             <select class="form-control" id="agama" name="agama" required>
               <option value="" >Choose</option>
-              <option>Islam</option>
-              <option>Kristen</option>
-              <option>Hindu</option>
-              <option>Budha</option>
-              <option>Konghucu</option>
+              <option value="Islam">Islam</option>
+              <option value="Kristen">Kristen</option>
+              <option value="Hindu">Hindu</option>
+              <option value="Budha">Budha</option>
+              <option value="Konghucu">Konghucu</option>
             </select>
           </div>
             <br>
