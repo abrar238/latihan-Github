@@ -1,5 +1,4 @@
 <?php
-include("koneksi.php");
 if(isset($_POST['submit'])){
 
     $no = $_POST['no'];
@@ -16,7 +15,7 @@ if(isset($_POST['submit'])){
    $query = mysqli_query($koneksi, $sql);
 
     if( $query ) {
-        header('location: ?hal=kontak status=sukses');
+        include ('?hal=kontak');
     }  else {
     die("akses ditolak");
 }

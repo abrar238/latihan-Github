@@ -38,7 +38,7 @@
       ?>
    </table>
       <div class="container">
-        <h5>Total Anggota: <?php echo mysqli_num_rows($query) ?></h5>
+        <h6>Total Anggota: <?php echo mysqli_num_rows($query) ?></h6>
       </div>
       <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
       <div class="btn-group mr-2" role="group" aria-label="First group">
