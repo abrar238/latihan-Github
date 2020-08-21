@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
    $query = mysqli_query($koneksi, $sql);
 
     if( $query ) {
-        include ('?hal=kontak');
+        header('location: ?hal=kontak');
     }  else {
     die("akses ditolak");
 }

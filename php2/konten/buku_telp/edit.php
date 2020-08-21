@@ -1,10 +1,7 @@
 <?php
-
 if ($_POST['jabatan']=='NULL') {
         echo "<script type='text/javascript'>alert('Error');history.go(-1);</script>";
     } else{
-
-
 
 if(isset($_POST['simpan'])){
 
@@ -19,7 +16,7 @@ if(isset($_POST['simpan'])){
     $sql = "UPDATE register SET nama='$nama', jabatan='$jabatan', jk='$jk', agama='$agama', alamat='$alamat', telp='$telp', email='$email' WHERE no='$no'";
     $query = mysqli_query($koneksi, $sql);
     if( $query ) {
-        include ('?hal=kontak');
+        header('location: ?hal=kontak');
     } else {
         die("akses ditolak");
     }
