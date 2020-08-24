@@ -14,6 +14,18 @@ if ($_GET['hal']=="home") {
 }elseif ($_GET['hal']=="ubah") {
 	include "konten/buku_telp/edit.php";
 }
+elseif ($_GET['hal']=="upload") {
+	include "konten/buku_telp/upload.php";
+}
+elseif ($_GET['hal']=="uploadfile") {
+	include "konten/buku_telp/uploadfile.php";
+}
+elseif ($_GET['hal']=="deletefile") {
+	include "konten/buku_telp/deletefile.php";
+}
+elseif ($_GET['hal']=="view") {
+	include "konten/buku_telp/view.php";
+}
  else {
 	"Bukan Home";
 }
