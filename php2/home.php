@@ -26,6 +26,15 @@ elseif ($_GET['hal']=="deletefile") {
 elseif ($_GET['hal']=="view") {
 	include "konten/buku_telp/view.php";
 }
+elseif ($_GET['hal']=="gambar") {
+	include "konten/buku_telp/uploadgambar.php";
+}
+elseif ($_GET['hal']=="uploadgambar") {
+	include "konten/buku_telp/uploadfilegambar.php";
+}
+elseif ($_GET['hal']=="hapusgambar") {
+	include "konten/buku_telp/hapusgambar.php";
+}
  else {
 	"Bukan Home";
 }

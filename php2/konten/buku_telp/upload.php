@@ -29,7 +29,7 @@
    </thead>
 
       <?php
-      $sql="SELECT*FROM upload ORDER BY id";
+      $sql="SELECT*FROM upload";
       $query= mysqli_query($koneksi, $sql);
       while ($file=mysqli_fetch_array($query)) {
         echo "<tr>";
