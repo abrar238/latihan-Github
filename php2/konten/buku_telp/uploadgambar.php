@@ -9,7 +9,7 @@
 <div class="form-group col-md-3">
     <label for="exampleFormControlFile1">Example Image input</label>
     <input type="file" class="form-control-file" id="exampleFormControlFile1" name="gambar">
-    <img src="" id="profile-img-tag" width="100"> 
+    <img src="" id="profile-img-tag" width="100px"> 
     
       <script>
           function readURL(input) {
@@ -42,6 +42,7 @@
   <th>Nama</th>
   <th>Gambar</th>
   <th>Size</th>
+  <!--<th>Action</th>-->
 </tr>
 
     <?php
@@ -52,9 +53,9 @@
     <tr>
       <td><?php echo $gambar['idg'] ?></td>
       <td><?php echo $gambar['nama'] ?></td>
-      <td><img src="konten/buku_telp/image/<?php echo $gambar['gambar'] ?>" width="100"></td>
+      <td><img src="konten/buku_telp/image/<?php echo $gambar['gambar'] ?>" width="100px"></td>
       <td><?php echo $gambar['ukuran_gambar'] ?></td>
-      <!--<td><a class="btn btn-danger" href="?hal=hapusgambar&no = <?php echo $gambar['idg'] ?>">DELETE</a></td> -->
+      <!--<td><a class="btn btn-danger"  href="?hal=hapusgambar&no=<?php echo $gambar['gambar']; ?>">Hapus</a></td>-->
     </tr>
      <?php } ?>
 
