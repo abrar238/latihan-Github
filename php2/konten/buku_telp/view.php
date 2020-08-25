@@ -1,7 +1,7 @@
 <h1>Hasil Upload File</h1>
 <hr>
 <?php
-$sql = "SELECT*FROM upload ORDER BY id";
+$sql = "SELECT*FROM upload ORDER BY id desc";
 $query = mysqli_query($koneksi,$sql);
 $file  = mysqli_fetch_array($query);
 ?>
