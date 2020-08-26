@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "koneksi.php";
 ?>
 
@@ -36,7 +37,7 @@ include "koneksi.php";
                         <label for="exampleInputPassword1">Password</label>
                         <input type="password" class="form-control" id="exampleInputPassword1" name="password">
                       </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="submit" class="btn btn-primary" name="login_btn">Submit</button>
                     </form>
 
                   </p>
