@@ -1,6 +1,14 @@
 <?php 
+<?php 
 session_start();
-include 'koneksi.php'; ?>
+if(!$_SESSION['$username' & '$password']){
+  header('location: login.php'); 
+}
+?>
+include 'koneksi.php'; 
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +21,7 @@ include 'koneksi.php'; ?>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 </head>
 
+<body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,3 +66,5 @@ include 'koneksi.php'; ?>
 <?php include 'home.php'; ?>
 </div>
   </div>
+</body>
+</html>

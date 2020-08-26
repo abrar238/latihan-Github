@@ -1,5 +1,4 @@
 <?php
-session_start(); 
 if ($_GET['hal']=="home") {
 	echo "Selamat Datang di Home";
 } elseif ($_GET['hal']=="kontak") {
