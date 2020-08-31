@@ -2,10 +2,6 @@
             <h3>Register</h3>
         <form class="needs-validation" novalidate action="?hal=simpan" method="POST">
 
-          <div class="col-md-3 ">
-              <label for="no">No</label>
-              <input type="text" class="form-control" id="no" name="no" required>
-            </div>
             <br>
             <div class="col-md-3 ">
               <label for="nama">Nama</label>

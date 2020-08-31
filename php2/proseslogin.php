@@ -1,5 +1,4 @@
 <?php
-session_start();
 include "koneksi.php";
 
 if (isset($_POST['login_btn'])) {
@@ -17,10 +16,11 @@ if (isset($_POST['login_btn'])) {
 		$_SESSION['password']=$password;
 		$_SESSION['status']='login';
 		echo "sukses";
-		header('location:index.php');
+		header('location:homepage.php?hal=home');
 	}
 	else{
 		echo "gagal";
+		header('location:index.php');
 	}
 }
 ?>
