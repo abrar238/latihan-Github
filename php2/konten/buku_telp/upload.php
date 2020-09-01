@@ -3,28 +3,27 @@
   <form class="needs-validation" novalidate action="?hal=uploadfile" method="POST" enctype="multipart/form-data">
 
 
-<div class="col-md-3 ">
-  <label for="nama">Judul</label>
-  <input type="text" class="form-control" id="judul" name="judul" required>
+<div class="col-md-3">
+  <label for="nama">Judul</label><br>
+  <input type="text" class="form-control" id="judul" name="judul" required style="height: 30px">
 </div>
 <br>
 <div class="form-group col-md-3">
-    <label for="exampleFormControlFile1">Example file input</label>
-    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="nama_file">
+    <input type="file" class="form-control-file-sm" id="exampleFormControlFile1" name="nama_file">
 </div>
-    <button class="btn btn-primary" type="submit" value="upload" name="upload">Submit</button>
+    <button class="btn btn-primary btn-sm" type="submit" value="upload" name="upload">Submit</button>
 <hr>
 </from>
 </div>
 
 <div class="container">
   <h5>Data Upload File</h5>
-   <table class="table table-dark table-striped">
+   <table class="table table-dark table-striped table-sm" style="height:100px">
     <thead>
         <tr>
-        <th>No</th>
-        <th>Judul</th>
-        <th>Action</th>
+        <th style="width: 30px">No</th>
+        <th style="width: 180px">Judul</th>
+        <th >Action</th>
         </tr>
    </thead>
 
@@ -36,7 +35,7 @@
         echo "<td>".$file['id']."</td>";
         echo "<td>".$file['judul']."</td>";
         echo "<td>";
-        echo "<a class='btn btn-info' href='?hal=view&no=".$file['id']."'>view</a>";
+        echo "<a class='btn btn-info btn-sm' href='?hal=view&no=".$file['id']."'>view</a>";
         //echo "<a class='btn btn-danger' href='?hal=deletefile&no=".$file['id']."'>delete</a>";
         echo "</td>";
         echo "</tr>";

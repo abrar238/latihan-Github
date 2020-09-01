@@ -1,23 +1,15 @@
 <?php
 if ($_GET['hal']=="home") {
 ?>
-
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
 <h3>Dashbord</h3>
   <div class="row">
     <div class="col-sm">
-		  <div class="card text-white bg-info mb-3" style="width: 12rem;">
-		    <div class="card-header">Info</div>
+		  <div class="card text-white bg-info" >
+		    <div class="card-header" >Info</div>
 		    <div class="card-body">
 		      <p class="card-text">Some quick example text to build on the card title.</p>
 		  </div>
-			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Simple collapsible
+			<button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#demo1">Simple collapsible
 			</button>
 			<div id="demo1" class="collapse">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -26,13 +18,13 @@ if ($_GET['hal']=="home") {
 			</div>
     </div>
 	</div>
-    <div class="col-sm">
-      	<div class="card text-white bg-success mb-3" style="width: 12rem;">
+    <div class="col-sm-3">
+      	<div class="card text-white bg-success">
 		  <div class="card-header">Succes</div>
 		  <div class="card-body">
 		    <p class="card-text">Some quick example text to build on the card title.</p>
 		  </div>
-		  <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo2">Simple collapsible
+		  <button type="button" class="btn btn-success btn-sm" data-toggle="collapse" data-target="#demo2">Simple collapsible
 			</button>
 			<div id="demo2" class="collapse">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -41,54 +33,52 @@ if ($_GET['hal']=="home") {
 			</div>
 		</div>
     </div>
-    <div class="col-sm">
-      <div class="card text-white bg-warning mb-3" style="width: 12rem;">
+    <div class="col-sm-3">
+      <div class="card text-white bg-warning">
 	    <div class="card-header">Warning</div>
 	    <div class="card-body">
 	      <p class="card-text">Some quick example text to build on the card title.</p>
 	  </div>
-	  		<button type="button" class="btn btn-warning text-white" data-toggle="collapse" data-target="#demo4">Simple collapsible
+	  		<button type="button" class="btn btn-warning text-white btn-sm" data-toggle="collapse" data-target="#demo4">Simple collapsible
 			</button>
 			<div id="demo4" class="collapse">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			</div>
-    </div>
-	</div>
-     <div class="col-sm">
-      <div class="card text-white bg-danger mb-3" style="width: 12rem;">
+	    </div>
+		</div>
+     <div class="col-sm-3">
+      <div class="card text-white bg-danger mb">
 	    <div class="card-header">Danger</div>
 	    <div class="card-body">
 	      <p class="card-text">Some quick example text to build on the card title.</p>
 	  </div>
-	 	    <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">Simple collapsible
+	 	    <button type="button" class="btn btn-danger btn-sm" data-toggle="collapse" data-target="#demo3">Simple collapsible
 			</button>
 			<div id="demo3" class="collapse">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			</div>
-	</div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col">      
-    	<div class="card" style="width: 24rem;">
-    	  <div class="card-header">Bar Chart</div>
-		  <img src="img/bc.png" class="card-img-top" alt="bar chart">
 		</div>
-    </div>
-    <div class="col">   
-    	 <div class="card" style="width: 24rem;">
-    	  <div class="card-header">Pie CHart</div>
-		  <img src="img/pc.png" class="card-img-top" alt="pie chart">
-		</div>
-    </div>
-  </div>
-</body>
-</html>
+	    </div>
+	  </div>
+	  <br>
+	  <div class="row">
+	    <div class="col">      
+	    	<div class="card" style="width: 28rem;">
+	    	  <div class="card-header">Bar Chart</div>
+			  <img src="img/bc.png" class="card-img-top" alt="bar chart">
+			</div>
+	    </div>
+	    <div class="col">   
+	    	 <div class="card" style="width: 28rem;">
+	    	  <div class="card-header">Pie CHart</div>
+			  <img src="img/pc.png" class="card-img-top" alt="pie chart">
+			</div>
+	    </div>
+	  </div>
 
 
 <?php
@@ -125,6 +115,9 @@ elseif ($_GET['hal']=="uploadgambar") {
 }
 elseif ($_GET['hal']=="hapusgambar") {
 	include "konten/buku_telp/hapusgambar.php";
+}
+elseif ($_GET['hal']=="kalender") {
+	include "konten/kalender/kalender.php";
 }
  else {
 	"Bukan Home";

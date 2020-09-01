@@ -1,14 +1,12 @@
-<div class="container">
   <h2>Upload Gambar</h2>
   <form class="needs-validation" novalidate action="?hal=uploadgambar" method="POST" enctype="multipart/form-data"> 
 <div class="col-md-3 ">
-  <label for="nama">Nama</label>
-  <input type="text" class="form-control" id="nama" name="nama" required>
+  <label for="nama">Nama</label><br>
+  <input type="text" class="form-control" id="nama" name="nama" required style="height: 30px">
 </div>
-<br>
 <div class="form-group col-md-3">
-    <label for="exampleFormControlFile1">Example Image input</label>
-    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="gambar">
+    <label for="exampleFormControlFile1"></label>
+    <input type="file" class="form-control-file-sm" id="exampleFormControlFile1" name="gambar">
     <img src="" id="profile-img-tag" width="100px"> 
     
       <script>
@@ -26,22 +24,21 @@
               readURL(this);
           });
       </script>
-      
+<br>
+<button class="btn btn-primary btn-sm" type="submit" value="upload" name="upload">Submit</button>
 </div>
-<button class="btn btn-primary" type="submit" value="upload" name="upload">Submit</button>
 </from>
-</div>
 <hr>
 
 
 <div class="container">
 <h6>Data Gambar</h6>
-<table class="table table-dark table-striped">
+<table class="table table-dark table-striped table-sm">
 <tr>
-  <th>No</th>
-  <th>Nama</th>
-  <th>Gambar</th>
-  <th>Size</th>
+  <th style="width: 30px">No</th>
+  <th style="width: 150px">Nama</th>
+  <th style="width: 150px">Gambar</th>
+  <th >Size</th>
   <!--<th>Action</th>-->
 </tr>
 
