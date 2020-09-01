@@ -1,42 +1,57 @@
-<?php include "koneksi.php"; ?>
+<?php include "koneksi.php"; 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Example</title>
-<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script type="js/fullcalender.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+<style type="text/css">
+  body{
+    font-size: 15px;
+    font-family: Times New Rowman;
+  }
+
+</style>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-        <div class="collapse navbar-collapse" id="navbarSupportContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="logout.php">LogOut</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height:40px">
+  <a class="navbar-brand" href="#" style="width: 125px">
+  Navbar</a>
 
-        <div class="row">
-        <div class="col-xs-2">
-       <?php include 'menus.php'; ?>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <label for="name" style="color:white"><?php echo $_SESSION['username'];?></label>
+       <img class="rounded-circle" src="img/lg.jpg " alt="logo" style="width:30px;">
+    </form>
+  </div>
+</nav>
+
+
+      <div class="row">
+      <div class="col-1">
+      <?php include 'menus.php'; ?>
       </div>
       <div class="container">
-          <div class="col-xl-10">
+          <div class="col-11">
       <?php include 'home.php'; ?>
       </div>
         </div>

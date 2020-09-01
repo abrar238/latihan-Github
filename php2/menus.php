@@ -4,7 +4,6 @@
     <li>
       <a href="?hal=home" class="nav-link bg-dark text-white">Dashbord</a>
     </li>
-    <hr>
     <li>
       <a href="#member" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link bg-dark text-white">Member</a>
         <ul class="collapse list-unstyled" id="member">
@@ -19,7 +18,7 @@
           </li>
         </ul>
     </li>
-  <li>
+    <li>
     <a href="#upload" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link bg-dark text-white">Upload</a>
     <ul class="collapse list-unstyled" id="upload">
     <li>
@@ -29,7 +28,13 @@
       <a href="?hal=gambar" class="nav-link bg-dark text-white"> Upload Img</a>
     </li>
     </ul>
-  </li>
+    </li>
+    <li>
+      <a href="?hal=kalender" class="nav-link bg-dark text-white">Kalender</a>
+    </li>
+    <li>
+      <a href="logout.php" class="nav-link bg-dark text-white">Logout</a>
+    </li>
   </ul>
 </nav>
 </div>

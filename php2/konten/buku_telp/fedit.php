@@ -15,9 +15,9 @@ if( mysqli_num_rows($query) < 1 ){
 }
 ?>
 
-<div class="container">
+
          <h3>Edit Data Anggota</h3>
-         <h5><a href="?hal=kontak" class="btn btn-primary">[kembali ke home]</a></h5>
+         <h5><a href="?hal=kontak" class="btn btn-primary btn-sm">[kembali ke home]</a></h5>
         <form class="needs-validation" novalidate action="?hal=ubah" method="POST">
 
       <div class="col-md-3 ">
@@ -25,14 +25,14 @@ if( mysqli_num_rows($query) < 1 ){
         </div>
         <br>
         <div class="col-md-3 ">
-          <label for="nama">Nama</label>
-          <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $anggota['nama'] ?>">
+          <label for="nama">Nama</label><br>
+          <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $anggota['nama'] ?>" style="height: 30px">
         </div>
         <br>
         <div class="col-md-3 ">
         <?php  $jabatan=$anggota['jabatan'] ?>
-        <label for="jabatan">Jabatan</label>
-        <select class="form-control" id="jabatan" name="jabatan">
+        <label for="jabatan">Jabatan</label><br>
+        <select class="form-control-sm" id="jabatan" name="jabatan">
           <option value="NULL" name='chosse'>---chosse---</option>
           <option <?php echo ($jabatan == 'Operator')? "selected":""?> >Operator</option>
           <option <?php echo ($jabatan == 'Leader')? "selected":""?> >Leader</option>
@@ -42,7 +42,7 @@ if( mysqli_num_rows($query) < 1 ){
         </select>
         </div><br>
         <div class="col-md-3 ">
-        <label for="jk">Jenis Kelamin: </label><br>
+        <label for="jk">Gender: </label><br>
         <?php $jk = $anggota['jk']; ?>
         <label><input type="radio" name="jk" value="Laki-Laki" <?php echo ($jk == 'Laki-Laki') ? "checked": "" ?>> Laki-laki</label>
         <label><input type="radio" name="jk" value="Perempuan" <?php echo ($jk == 'Perempuan') ? "checked": "" ?>> Perempuan</label>
@@ -50,8 +50,8 @@ if( mysqli_num_rows($query) < 1 ){
         <br>
         <div class="col-md-3 ">
         <?php  $agama=$anggota['agama'] ?>
-        <label for="agama">Agama</label>
-        <select class="form-control" id="agama" name="agama">
+        <label for="agama">Agama</label><br>
+        <select class="form-control-sm" id="agama" name="agama">
           <option value="NULL" name='chosse'>---chosse---</option>
           <option <?php echo ($agama == 'Islam')? "selected":""?> >Islam</option>
           <option <?php echo ($agama == 'Kristen')? "selected":""?> >Kristen</option>
@@ -63,19 +63,19 @@ if( mysqli_num_rows($query) < 1 ){
         <br>
         <div class="col-md-6 ">
           <label for="Alamat">Alamat</label>
-          <textarea class="form-control" id="alamat" name="alamat"><?php echo $anggota['alamat'] ?></textarea> 
+          <textarea class="form-control" id="alamat" name="alamat" style="width:188px"><?php echo $anggota['alamat'] ?></textarea> 
         </div>
         <br>
         <div class="col-md-3 ">
-          <label for="telp">Telp</label>
-          <input type="text" class="form-control" id="telp" name="telp" value="<?php echo $anggota['telp'] ?>">
+          <label for="telp">Telp</label><br>
+          <input type="text" class="form-control" id="telp" name="telp" value="<?php echo $anggota['telp'] ?>" style="height: 30px">
         </div>
         <br>
         <div class="col-md-3 ">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" name="email" value="<?php echo $anggota['email'] ?>">
+          <label for="email">Email</label><br>
+          <input type="email" class="form-control" id="email" name="email" value="<?php echo $anggota['email'] ?>" style="height: 30px">
         </div>
         <br>
             <button class="btn btn-primary" type="submit" value="simpan" name="simpan">Submit</button>
         </form>
-      </div>  
+ 

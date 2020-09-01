@@ -28,11 +28,17 @@ session_start();
   .card{
       background-color: rgba(0,0,0,0.4);
       color: white;
-      width: 21rem; 
-      margin:100px 250px;
+      width: 17rem;
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
   }
   .card-title{
-    font-size: 30px; 
+    font-size: 20px; 
+  }
+  .form-grop{
+    font-size: 15px;
   }
 </style>
           <div class="container-sm">
@@ -43,13 +49,13 @@ session_start();
                     <form method="POST" action="proseslogin.php" >
                       <div class="form-group">
                         <label for="formGroupExampleInput" >Username</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" name="username">
+                        <input type="text" class="form-control" id="formGroupExampleInput" name="username" style="height: 30px">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                        <label for="exampleInputPassword1">Password </label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" name="password" style="height: 30px">
                       </div>
-                      <button type="submit" class="btn btn-primary" name="login_btn">Submit</button>
+                      <button type="submit" class="btn btn-primary btn-sm" name="login_btn">Submit</button>
                     </form>
                   </p>
                 </div>
