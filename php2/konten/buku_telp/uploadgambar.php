@@ -1,4 +1,4 @@
-  <h2>Upload Gambar</h2>
+  <h3>Upload Gambar</h3>
   <form class="needs-validation" novalidate action="?hal=uploadgambar" method="POST" enctype="multipart/form-data"> 
 <div class="col-md-3 ">
   <label for="nama">Nama</label><br>

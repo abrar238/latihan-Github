@@ -10,13 +10,7 @@ session_start();
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script type="js/fullcalender.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
-<style type="text/css">
+  <style type="text/css">
   body{
     font-size: 15px;
     font-family: Times New Rowman;
@@ -26,7 +20,7 @@ session_start();
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height:40px">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height:30px">
   <a class="navbar-brand" href="#" style="width: 125px">
   Navbar</a>
 
@@ -40,7 +34,7 @@ session_start();
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <label for="name" style="color:white"><?php echo $_SESSION['username'];?></label>
-       <img class="rounded-circle" src="img/lg.jpg " alt="logo" style="width:30px;">
+       <img class="rounded-circle" src="img/lg.jpg " alt="logo" style="width:25px;">
     </form>
   </div>
 </nav>
@@ -57,4 +51,9 @@ session_start();
         </div>
       </div>
 </body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
 </html>

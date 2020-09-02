@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
     $email = $_POST['email'];
 
 
-    $sql = "INSERT INTO register (no, nama, jabatan, jk, agama, alamat, telp, email) VALUE ('$no', '$nama', '$jabatan', '$jk', '$agama', '$alamat', '$telp', '$email')";
+    $sql = "INSERT INTO register (no, nama, jabatan, jk, agama, alamat, telp, email) VALUES ('$no', '$nama', '$jabatan', '$jk', '$agama', '$alamat', '$telp', '$email')";
    $query = mysqli_query($koneksi, $sql);
 
     if( $query ) {
