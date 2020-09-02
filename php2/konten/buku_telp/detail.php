@@ -1,5 +1,4 @@
-<div class="container-sm">
-  <h2>Anggota</h2>
+  <h3>Anggota</h3>
   <h5><a href="?hal=register" class="btn btn-primary btn-sm">[+] anggota baru</a></h5>
    <table class="table table-dark table-striped table-sm">
     <thead>
@@ -48,4 +47,3 @@
           <button type="button" class="btn btn-secondary">Next</button>
       </div>
       </div>
-  </div>

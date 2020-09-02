@@ -1,7 +1,5 @@
       <h3>Register</h3>
         <form class="needs-validation" novalidate action="?hal=simpan" method="POST">
-
-            <br>
             <div class="col-md-3 ">
               <label for="nama">Nama</label><br>
               <input type="text" class="form-control" id="nama" name="nama" required style="height: 30px">
@@ -41,12 +39,12 @@
 
             <div class="col-md-6 ">
               <label for="Alamat">Alamat</label><br>
-              <textarea class="form-control" id="alamat" name="alamat" required style="width:188px"></textarea> 
+              <textarea class="form-control" id="alamat" name="alamat" required style="width:220px"></textarea> 
             </div>
             <br>
             <div class="col-md-3 ">
               <label for="telp">Telp</label><br>
-              <input type="text" class="form-control" id="telp" name="telp" required style="height: 40px we">
+              <input type="text" class="form-control" id="telp" name="telp" required style="height: 30px we">
             </div>
             <br>
             <div class="col-md-3 ">

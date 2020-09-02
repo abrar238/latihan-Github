@@ -1,4 +1,4 @@
-<div class="container">
+
   <h2>Upload File</h2>
   <form class="needs-validation" novalidate action="?hal=uploadfile" method="POST" enctype="multipart/form-data">
 
@@ -42,8 +42,6 @@
       }
       ?>
    </table>
-
-      <div class="container">
         <h6>Total File: <?php echo mysqli_num_rows($query) ?></h6>
-      </div>
-  </div>
+
+

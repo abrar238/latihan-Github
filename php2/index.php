@@ -21,16 +21,16 @@ session_start();
     background-image:url("img/imgs.jpg"); 
     background-size: cover;
     background-attachment: fixed;
-    width: 80%;
-    min-height: 200px;
+    font-size: 15px;
+    font-family: Times New Rowman;
   }
 
   .card{
       background-color: rgba(0,0,0,0.4);
       color: white;
-      width: 17rem;
+      width: 280px;
       position: absolute;
-      top: 100px;
+      top: 150px;
       left: 50%;
       transform: translateX(-50%);
   }
@@ -42,7 +42,7 @@ session_start();
   }
 </style>
           <div class="container-sm">
-                <div class="card">
+                <div class="card  border-white shadow p-3 mb-5">
                 <div class="card-body">
                   <h5 class="card-title">Sign In </h5>
                   <p class="card-text">
