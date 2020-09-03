@@ -119,6 +119,24 @@ elseif ($_GET['hal']=="hapusgambar") {
 elseif ($_GET['hal']=="kalender") {
 	include "konten/kalender/kalender.php";
 }
+elseif ($_GET['hal']=="load") {
+	include "konten/kalender/load.php";
+}
+elseif ($_GET['hal']=="insert") {
+	include "konten/kalender/insert.php";
+}
+elseif ($_GET['hal']=="updatekal") {
+	include "konten/kalender/update.php";
+}
+elseif ($_GET['hal']=="deletekal") {
+	include "konten/kalender/delete.php";
+}
+elseif ($_GET['hal']=="message") {
+	include "konten/email/email.php";
+}
+elseif ($_GET['hal']=="kirim") {
+	include "konten/email/send.php";
+}
  else {
 	"Bukan Home";
 }
