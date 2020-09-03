@@ -3,11 +3,10 @@
 $id = $_POST['id'];
 $title = $_POST['title'];
 $start = $_POST['start'];
-$endy = $_POST['endy'];
+$end = $_POST['end'];
 
-$sql="UPDATE event SET title='".$title."', start='".$start."', endy='".$endy."' WHERE id='".$id."' ";
-mysqli_query($koneksi, $sql);
+$sqlUpdate = "UPDATE event SET title='" . $title . "',start='" . $start . "',end='" . $end . "' WHERE id=" . $id;
+mysqli_query($koneksi, $sqlUpdate)
 mysqli_close($koneksi);
 
-
- ?>
+?>
