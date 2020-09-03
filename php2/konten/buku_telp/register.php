@@ -52,6 +52,5 @@
               <input type="email" class="form-control" id="email" name="email" required style="height: 30px">
             </div>
             <br>
-          
-                <button class="btn btn-primary btn-sm" type="submit" value="submit" name="submit">Submit</button>
+            <button class="btn btn-primary btn-sm" type="submit" value="submit" name="submit">Submit</button>
             </form>

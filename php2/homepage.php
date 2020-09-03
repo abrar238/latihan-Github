@@ -14,14 +14,14 @@ session_start();
   body{
     font-size: 15px;
     font-family: Times New Rowman;
+    position: sticky-top;
   }
-
 </style>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height:30px">
-  <a class="navbar-brand" href="#" style="width: 125px">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark " style="height:30px ">
+  <a class="navbar-brand " href="#">
   Navbar</a>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,21 +31,20 @@ session_start();
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">About</a>
+      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <label for="name" style="color:white"><?php echo $_SESSION['username'];?></label>
-       <img class="rounded-circle" src="img/lg.jpg " alt="logo" style="width:25px;">
+      </label>
+       <img class="rounded-circle" src="img/lg.jpg " alt="logo" style="width:25px;"><label for="name" style="color:white"><?php echo $_SESSION['username'];?>
     </form>
   </div>
 </nav>
-
-
       <div class="row">
-      <div class="col-1">
+      <div class="col-xs">
       <?php include 'menus.php'; ?>
       </div>
       <div class="container">
-          <div class="col-11">
+          <div class="col-xl">
       <?php include 'home.php'; ?>
       </div>
         </div>

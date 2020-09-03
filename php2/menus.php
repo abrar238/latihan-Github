@@ -32,6 +32,9 @@
     <li>
       <a href="?hal=kalender" class="nav-link bg-dark text-white">Kalender</a>
     </li>
+        <li>
+      <a href="?hal=message" class="nav-link bg-dark text-white">Message</a>
+    </li>
     <li>
       <a href="logout.php" class="nav-link bg-dark text-white">Logout</a>
     </li>
