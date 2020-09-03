@@ -1,13 +1,14 @@
-<?php 
+<?php
 
 $title = isset($_POST['title']) ? $_POST['title'] : "";
 $start = isset($_POST['start']) ? $_POST['start'] : "";
-$endy = isset($_POST['endy']) ? $_POST['endy'] : "";
+$end = isset($_POST['end']) ? $_POST['end'] : "";
 
-$insert = "INSERT INTO event (title,start,endy) VALUES ('".$title"','".$start"','".$endy"')";
-$result = mysqli_query($koneksi, $insert);
+$sql = "INSERT INTO event (title,start,end) VALUES ('".$title."','".$start."','".$end."')";
 
-if(!$result){
- 	$result=mysqli_error($koneksi);
- }
- ?>
+$result = mysqli_query($koneksi,$sql);
+
+if (! $result) {
+    $result = mysqli_error($koneksi);
+}
+?>
