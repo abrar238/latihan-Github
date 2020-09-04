@@ -1,14 +1,17 @@
       <h3>Register</h3>
         <form class="needs-validation" novalidate action="?hal=simpan" method="POST">
-            <div class="col-md-3 ">
-              <label for="nama">Nama</label><br>
-              <input type="text" class="form-control" id="nama" name="nama" required style="height: 30px">
-            </div>
-            <br>
 
+          <div class="form-group row">
+              <label for="nama" class="col-sm-1 col-form-label">Nama</label>
+              <div class="col-sm-3">
+              <input type="text" class="form-control" id="nama" name="nama" required style="height: 25px">
+              </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="nama" class="col-sm-1 col-form-label">Jabatan</label>
             <div class="col-md-3">
-            <label for="nama">Jabatan</label><br>
-            <select class="form-control-sm" id="jabatan" name="jabatan" required style="height: 30px">
+            <select class="form-control" id="jabatan" name="jabatan" required style="font-size: 15px">
               <option value="" >Choose</option>
               <option value="Operator" >Operator</option>
               <option value="Leader" >Leader</option>
@@ -17,16 +20,20 @@
               <option value="Manager">Manager</option>
             </select>
             </div>
-            <br>
+          </div>
+
+          <div class="form-group row">
+            <label for="jk" value="jk" class="col-sm-1 col-form-label">Gender: </label><br>
             <div class="col-md-3">
-            <label for="jk" value="jk" >Gender: </label><br>
             <label><input type="radio" name="jk" value="Laki-Laki"> Laki-laki</label>
             <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
             </div>
-            <br>
+          </div>
+
+          <div class="form-group row">
+              <label for="nama" class="col-sm-1 col-form-label">Agama</label>
             <div class="col-md-3">
-              <label for="nama">Agama</label><br>
-            <select class="form-control-sm" id="agama" name="agama" required>
+            <select class="form-control" id="agama" name="agama" style="font-size: 15px" required>
               <option value="" >Choose</option>
               <option value="Islam">Islam</option>
               <option value="Kristen">Kristen</option>
@@ -34,23 +41,29 @@
               <option value="Budha">Budha</option>
               <option value="Konghucu">Konghucu</option>
             </select>
+            </div>
           </div>
-            <br>
 
-            <div class="col-md-6 ">
-              <label for="Alamat">Alamat</label><br>
-              <textarea class="form-control" id="alamat" name="alamat" required style="width:220px"></textarea> 
+            <div class="form-group row">
+              <label for="Alamat" class="col-sm-1 col-form-label">Alamat</label>
+              <div class="col-md-3">
+              <textarea class="form-control" id="alamat" name="alamat" required style="width:250px"></textarea> 
             </div>
-            <br>
-            <div class="col-md-3 ">
-              <label for="telp">Telp</label><br>
-              <input type="text" class="form-control" id="telp" name="telp" required style="height: 30px we">
             </div>
-            <br>
-            <div class="col-md-3 ">
-              <label for="email">Email</label><br>
-              <input type="email" class="form-control" id="email" name="email" required style="height: 30px">
+
+            <div class="form-group row">
+              <label for="telp" class="col-sm-1 col-form-label">Telp</label>
+            <div class="col-md-3">
+              <input type="text" class="form-control" id="telp" name="telp" required style="height: 25px">
             </div>
-            <br>
+            </div>
+
+            <div class="form-group row">
+              <label for="email" class="col-sm-1 col-form-label">Email</label>
+              <div class="col-md-3">
+              <input type="email" class="form-control" id="email" name="email" required style="height: 25px">
+              </div>
+            </div>
+
             <button class="btn btn-primary btn-sm" type="submit" value="submit" name="submit">Submit</button>
             </form>

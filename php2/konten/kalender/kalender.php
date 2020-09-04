@@ -1,25 +1,24 @@
-<body>
-<script>
-
+<script> 
 $(document).ready(function () {
     var calendar = $('#calendar').fullCalendar({
+        themeSystem:'jquery-ui',
         editable: true,
         header:{
             left:'prev,next today',
             center:'title',
-            right:'month,agendaWeek,agendaDay'
+            right:'month,agendaWeek,agendaDay,listMonth'
         },
+        eventLimit:true,
+        selectable: true,
+        selectHelper: true,
         events: "?hal=load",
-        displayEventTime: false,
-        eventRender: function (event, element, view) {
+        select: function (start, end, allDay) {
             if (event.allDay === 'true') {
                 event.allDay = true;
             } else {
                 event.allDay = false;
             }
         },
-        selectable: true,
-        selectHelper: true,
         select: function (start, end, allDay) {
             var title = prompt('Event Title:');
 
@@ -47,9 +46,21 @@ $(document).ready(function () {
             }
             calendar.fullCalendar('unselect');
         },
-        
         editable: true,
-        eventDrop: function (event, delta) {
+        eventResize: function (event, delta) {
+                    var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
+                    var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
+                    $.ajax({
+                        url: '?hal=updatekal',
+                        data: 'title=' + event.title + '&start=' + start + '&endy=' + end + '&id=' + event.id,
+                        type: "POST",
+                        success: function (response) {
+                            displayMessage("berhasil diubah");
+                        }
+                    });
+                },
+        editable: true,
+        eventClick:function(event){
                     var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
                     var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
                     $.ajax({
@@ -95,9 +106,5 @@ function displayMessage(message) {
     height: 60px;
 }
 </style>
-
-    <h3>Kalender</h3>
     <div class="response"></div>
     <div id='calendar'></div>
-    </body>
-</html>

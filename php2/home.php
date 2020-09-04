@@ -119,8 +119,8 @@ elseif ($_GET['hal']=="hapusgambar") {
 elseif ($_GET['hal']=="kalender") {
 	include "konten/kalender/kalender.php";
 }
-elseif ($_GET['hal']=="load") {
-	include "konten/kalender/load.php";
+elseif ($_GET['hal']=="viewkal") {
+	include "konten/kalender/viewkal.php";
 }
 elseif ($_GET['hal']=="insert") {
 	include "konten/kalender/insert.php";

@@ -1,10 +1,12 @@
 <?php 
 
-$id = $_GET['id'];
-$sqlDelete = "DELETE from event WHERE id=".$id;
+$id = $_POST['id'];
+$sql = "DELETE from event WHERE id=".$id;
+$query = mysali_query($koneksi, "DELETE FROM event WHERE id='$id'");
 
-mysqli_query($conn, $sqlDelete);
-echo mysqli_affected_rows($conn);
+if($query)
+echo json_encode(array('status'=>'success'));
+else
+echo json_encode(array('status'=>'failed'));
 
-mysqli_close($conn);
  ?>
