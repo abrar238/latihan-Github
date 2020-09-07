@@ -82,6 +82,8 @@ if ($_GET['hal']=="home") {
 
 
 <?php
+} elseif ($_GET['hal']=="koneksi") {
+	include "konten/koneksi.php";
 } elseif ($_GET['hal']=="kontak") {
 	include "konten/buku_telp/detail.php";
 }elseif ($_GET['hal']=="register") {

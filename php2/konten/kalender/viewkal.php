@@ -1,19 +1,15 @@
-<?php
-if($type == 'fetch'){
-    $event = array();
-    $query = mysqli_query($koneksi,  "SELECT*FROM event ORDER BY id");
-    while($fetch=mysqli_fetch_array($query, MYSQLI_ASSOC)){
-        $e = array();
-        $e['id'] = $fetch['id'];
-        $e['title'] = $fetch['title'];
-        $e['start'] = $fetch['start'];
-        $e['end'] = $fetch['end'];
+<?php 
 
-        $allday = ($fetch['allDay'] == "true")? true : flase;
-        $e['allday']=$allday;
+$json=array();
+$sql="SELECT*FROM event ORDER BY id";
 
-        array_push($event, $e);
-    }
-    echo json_encode($e );
+$result=mysqli_query($koneksi, $sql);
+$event=array();
+while($row = mysqli_fetch($result)){
+    array_push($event, $row);
 }
+mysqli_free_result($result);
+mysqli_close($koneksi);
+echo json_encode($event);
+ 
 ?>

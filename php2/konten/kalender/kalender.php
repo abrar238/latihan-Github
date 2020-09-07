@@ -1,24 +1,24 @@
-<script> 
+<script>
 $(document).ready(function () {
     var calendar = $('#calendar').fullCalendar({
-        themeSystem:'jquery-ui',
         editable: true,
         header:{
-            left:'prev,next today',
-            center:'title',
-            right:'month,agendaWeek,agendaDay,listMonth'
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay,listMonth'
         },
-        eventLimit:true,
-        selectable: true,
-        selectHelper: true,
-        events: "?hal=load",
-        select: function (start, end, allDay) {
+        events: "?hal=viewkal",
+        displayEventTime: false,
+        eventRender: function (event, element, view) {
             if (event.allDay === 'true') {
                 event.allDay = true;
             } else {
                 event.allDay = false;
             }
         },
+
+        selectable: true,
+        selectHelper: true,
         select: function (start, end, allDay) {
             var title = prompt('Event Title:');
 
@@ -31,7 +31,7 @@ $(document).ready(function () {
                     data: 'title=' + title + '&start=' + start + '&end=' + end,
                     type: "POST",
                     success: function (data) {
-                        displayMessage("berhasil ditambahkan");
+                        displayMessage("data berhasil masuk");
                     }
                 });
                 calendar.fullCalendar('renderEvent',
@@ -46,54 +46,43 @@ $(document).ready(function () {
             }
             calendar.fullCalendar('unselect');
         },
+        
         editable: true,
-        eventResize: function (event, delta) {
+        eventDrop: function (event, delta) {
                     var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
                     var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
                     $.ajax({
                         url: '?hal=updatekal',
-                        data: 'title=' + event.title + '&start=' + start + '&endy=' + end + '&id=' + event.id,
+                        data: 'title=' + event.title + '&start=' + start + '&end=' + end + '&id=' + event.id,
                         type: "POST",
                         success: function (response) {
-                            displayMessage("berhasil diubah");
+                            displayMessage("update sukses");
                         }
                     });
-                },
-        editable: true,
-        eventClick:function(event){
-                    var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
-                    var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
-                    $.ajax({
-                        url: '?hal=updatekal',
-                        data: 'title=' + event.title + '&start=' + start + '&endy=' + end + '&id=' + event.id,
-                        type: "POST",
-                        success: function (response) {
-                            displayMessage("berhasil diubah");
-                        }
-                    });
-                },
-        eventClick: function (event) {
-            var deleteMsg = confirm("hapus data?");
-            if (deleteMsg) {
-                $.ajax({
-                    type: "POST",
-                    url: "?hal=deletekal",
-                    data: "&id=" + event.id,
-                    success: function (response) {
-                        if(parseInt(response) > 0) {
-                            $('#calendar').fullCalendar('removeEvents', event.id);
-                            displayMessage("berhasil dihapus");
-                        }
-                    }
-                });
-            }
-        }
+                }
+
+        //eventClick: function (event) {
+            //var deleteMsg = confirm("Do you really want to delete?");
+            //if (deleteMsg) {
+                //$.ajax({
+                   // type: "POST",
+                    //url: "?hal=deletekal",
+                    //data: "&id=" + event.id,
+                    //uccess: function (response) {
+                        //if(parseInt(response) > 0) {
+                           // $('#calendar').fullCalendar('removeEvents', event.id);
+                            //displayMessage("delete berhasil");
+                        //}
+                    //}
+                //});
+            //}
+        //}
 
     });
 });
 
 function displayMessage(message) {
-	    $(".response").html("<div class='success'>"+message+"</div>");
+        $(".response").html("<div class='success'>"+message+"</div>");
     setInterval(function() { $(".success").fadeOut(); }, 1000);
 }
 </script>

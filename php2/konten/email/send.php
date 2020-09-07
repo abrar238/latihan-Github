@@ -6,7 +6,7 @@ include ('PHPMailer/Exception.php');
 include ('PHPMailer/PHPMailer.php');
 include ('PHPMailer/SMTP.php');
 
-$email_pengirim = 'abrar.sputra@gmail.com';
+$email_pengirim = 'test@gmail.com';
 $nama_pengirim = 'schnee';
 $email_penerima = $_POST['email_penerima'];
 $subjek = $_POST['subjek'];
@@ -21,7 +21,7 @@ $mail->SMTPAuth=true;
 $mail->SMtpSecure='ssl';
 $mail->Host = 'smtp.gmail.com';
 $mail->Username = 'schnee';
-$mail->Password = 'Sersan@109';
+$mail->Password = 'test23';
 $mail->Port = 465;
 
 
@@ -55,4 +55,3 @@ if(empty($file)){
     }
 }
  ?>
-

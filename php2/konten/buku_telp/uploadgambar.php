@@ -11,7 +11,6 @@
 <div class="form-group row">
     <div class="form-group col-md-3">
     <input type="file" class="form-control-file-sm" id="exampleFormControlFile1" name="gambar">
-    <img src="" id="profile-img-tag" width="100px"> 
     </div>
 </div>  
       <script>

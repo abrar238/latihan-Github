@@ -65,5 +65,19 @@
               </div>
             </div>
 
+           <!-- <script type="text/javascript">
+
+              $(function(){
+                $("#datepicker").datepicker();
+              });
+            </script>
+
+            <div class="form-gruop row">
+              <label for="datepicker" class="col-sm-1 col-from-label">Tanggal</label>
+              <div class="col-md-3">
+              <input type="text" name="datepicker" id="datepicker" style="height: 25px" >
+              </div>
+            </div> -->
+
             <button class="btn btn-primary btn-sm" type="submit" value="submit" name="submit">Submit</button>
             </form>

@@ -1,4 +1,5 @@
 <?php include "koneksi.php"; 
+require_once "koneksi.php";
 session_start();
 ?>
 <!DOCTYPE html>

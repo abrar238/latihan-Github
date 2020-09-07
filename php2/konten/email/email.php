@@ -1,6 +1,44 @@
 <h3>Message</h3>
 
-<form action="?hal=kirim" method="POST">
+<?php 
+    if(isset($_POST['submit'])){
+
+        require 'PHPMailerAutoload.php';
+
+        $mail=new PHPMailer;
+        $mail->SMTPDebug=4;
+        $mail->isSMTP();
+
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth= true;
+        $mail->Username=EMAIL;
+        $mail->Password=PASS;
+        $mail->SMTPSecure='tls';
+        $mail->Port=587;
+
+        $mail->setForm(EMAIL,'schnee');
+        $mail->addAddress($_POST['email']); 
+
+        $mail->addReplyTo(EMAIL); 
+
+        $mail->isHTML(true);   
+
+        $mail->Subject=$_POST['subjek'];
+        $mail->Body=$_POST['pesan'];
+        $mail->AltBody=$_POST['file'];
+
+        if($mail->send()){
+            echo 'pesan gagal dikirim';
+            echo 'Mailer Error'.$mail->ErrorInfo;
+        }else{
+        echo 'pesan terkirim';
+        }   
+    }
+ ?>
+
+
+
+<form  method="POST">
 
 <div class="form-group row">
     <label for="exampleInputEmail1" class="col-sm-1 col-form-label">Kepada</label>
