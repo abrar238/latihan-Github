@@ -1,5 +1,4 @@
 <?php
-
 $title = isset($_POST['title']) ? $_POST['title'] : "";
 $start = isset($_POST['start']) ? $_POST['start'] : "";
 $end = isset($_POST['end']) ? $_POST['end'] : "";

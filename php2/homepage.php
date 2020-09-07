@@ -1,4 +1,5 @@
 <?php include "koneksi.php"; 
+require_once "koneksi.php";
 session_start();
 ?>
 <!DOCTYPE html>
@@ -10,6 +11,7 @@ session_start();
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script type="jquery/jquery-ui.min.js"></script>
   <style type="text/css">
   body{
     font-size: 15px;

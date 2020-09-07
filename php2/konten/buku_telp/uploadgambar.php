@@ -1,14 +1,18 @@
   <h3>Upload Gambar</h3>
   <form class="needs-validation" novalidate action="?hal=uploadgambar" method="POST" enctype="multipart/form-data"> 
-<div class="col-md-3 ">
-  <label for="nama">Nama</label><br>
-  <input type="text" class="form-control" id="nama" name="nama" required style="height: 30px">
+
+<div class="form-group row">
+  <label for="nama">Nama</label>
+  <div class="col-md-3 ">
+  <input type="text" class="form-control" id="nama" name="nama" required style="height: 25px">
+  </div>
 </div>
-<div class="form-group col-md-3">
-    <label for="exampleFormControlFile1"></label>
+
+<div class="form-group row">
+    <div class="form-group col-md-3">
     <input type="file" class="form-control-file-sm" id="exampleFormControlFile1" name="gambar">
-    <img src="" id="profile-img-tag" width="100px"> 
-    
+    </div>
+</div>  
       <script>
           function readURL(input) {
               if (input.files && input.files[0]) {
@@ -24,15 +28,14 @@
               readURL(this);
           });
       </script>
-<br>
 <button class="btn btn-primary btn-sm" type="submit" value="upload" name="upload">Submit</button>
-</div>
-</from>
 <hr>
+</from>
+
 
 
 <div class="container">
-<h6>Data Gambar</h6>
+<h5>Data Gambar</h5>
 <table class="table table-dark table-striped table-sm">
 <tr>
   <th style="width: 30px">No</th>

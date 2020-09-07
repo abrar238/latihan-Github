@@ -1,10 +1,10 @@
 <?php 
 
-$id = $_GET['id'];
-$sqlDelete = "DELETE from event WHERE id=".$id;
+$id=$_POST['id'];
+$sql="DELETE from event WHERE id".$id;
 
-mysqli_query($conn, $sqlDelete);
-echo mysqli_affected_rows($conn);
+mysqli_query($koneksi, $sql);
+echo mysqli_affected_rows($koneksi);
+mysqli_close($koneksi);
 
-mysqli_close($conn);
- ?>
+?>

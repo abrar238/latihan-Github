@@ -2,19 +2,21 @@
   <h3>Upload File</h3>
   <form class="needs-validation" novalidate action="?hal=uploadfile" method="POST" enctype="multipart/form-data">
 
-
-<div class="col-md-3">
+<div class="form-group row">
   <label for="nama">Judul</label><br>
-  <input type="text" class="form-control" id="judul" name="judul" required style="height: 30px">
+  <div class="col-md-3">
+  <input type="text" class="form-control" id="judul" name="judul" required style="height: 25px">
+  </div>
 </div>
-<br>
-<div class="form-group col-md-3">
+
+<div class="form-group row">
+    <div class="form-group col-md-3">
     <input type="file" class="form-control-file-sm" id="exampleFormControlFile1" name="nama_file">
+    </div>
 </div>
     <button class="btn btn-primary btn-sm" type="submit" value="upload" name="upload">Submit</button>
 <hr>
 </from>
-</div>
 
 <div class="container">
   <h5>Data Upload File</h5>

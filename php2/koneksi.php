@@ -12,5 +12,3 @@ $koneksi = mysqli_connect($server,$user,$password,$nama_database);
 if(!$koneksi){
 	die("gagal terhubung:".mysqli_connect_error());
 }
-
-?>

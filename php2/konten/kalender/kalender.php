@@ -1,15 +1,13 @@
-<body>
 <script>
-
 $(document).ready(function () {
     var calendar = $('#calendar').fullCalendar({
         editable: true,
         header:{
-            left:'prev,next today',
-            center:'title',
-            right:'month,agendaWeek,agendaDay'
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay,listMonth'
         },
-        events: "?hal=load",
+        events: "?hal=viewkal",
         displayEventTime: false,
         eventRender: function (event, element, view) {
             if (event.allDay === 'true') {
@@ -18,6 +16,7 @@ $(document).ready(function () {
                 event.allDay = false;
             }
         },
+
         selectable: true,
         selectHelper: true,
         select: function (start, end, allDay) {
@@ -32,7 +31,7 @@ $(document).ready(function () {
                     data: 'title=' + title + '&start=' + start + '&end=' + end,
                     type: "POST",
                     success: function (data) {
-                        displayMessage("berhasil ditambahkan");
+                        displayMessage("data berhasil masuk");
                     }
                 });
                 calendar.fullCalendar('renderEvent',
@@ -54,35 +53,36 @@ $(document).ready(function () {
                     var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
                     $.ajax({
                         url: '?hal=updatekal',
-                        data: 'title=' + event.title + '&start=' + start + '&endy=' + end + '&id=' + event.id,
+                        data: 'title=' + event.title + '&start=' + start + '&end=' + end + '&id=' + event.id,
                         type: "POST",
                         success: function (response) {
-                            displayMessage("berhasil diubah");
+                            displayMessage("update sukses");
                         }
                     });
-                },
-        eventClick: function (event) {
-            var deleteMsg = confirm("hapus data?");
-            if (deleteMsg) {
-                $.ajax({
-                    type: "POST",
-                    url: "?hal=deletekal",
-                    data: "&id=" + event.id,
-                    success: function (response) {
-                        if(parseInt(response) > 0) {
-                            $('#calendar').fullCalendar('removeEvents', event.id);
-                            displayMessage("berhasil dihapus");
-                        }
-                    }
-                });
-            }
-        }
+                }
+
+        //eventClick: function (event) {
+            //var deleteMsg = confirm("Do you really want to delete?");
+            //if (deleteMsg) {
+                //$.ajax({
+                   // type: "POST",
+                    //url: "?hal=deletekal",
+                    //data: "&id=" + event.id,
+                    //uccess: function (response) {
+                        //if(parseInt(response) > 0) {
+                           // $('#calendar').fullCalendar('removeEvents', event.id);
+                            //displayMessage("delete berhasil");
+                        //}
+                    //}
+                //});
+            //}
+        //}
 
     });
 });
 
 function displayMessage(message) {
-	    $(".response").html("<div class='success'>"+message+"</div>");
+        $(".response").html("<div class='success'>"+message+"</div>");
     setInterval(function() { $(".success").fadeOut(); }, 1000);
 }
 </script>
@@ -95,9 +95,5 @@ function displayMessage(message) {
     height: 60px;
 }
 </style>
-
-    <h3>Kalender</h3>
     <div class="response"></div>
     <div id='calendar'></div>
-    </body>
-</html>
