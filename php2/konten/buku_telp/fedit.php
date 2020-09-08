@@ -15,8 +15,9 @@ if( mysqli_num_rows($query) < 1 ){
 }
 ?>
 
-
+         <br>
          <h3>Edit Data Anggota</h3>
+         <hr>
          <h5><a href="?hal=kontak" class="btn btn-primary btn-sm">[kembali ke home]</a></h5>
         <form class="needs-validation" novalidate action="?hal=ubah" method="POST">
 

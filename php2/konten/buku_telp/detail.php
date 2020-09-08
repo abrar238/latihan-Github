@@ -1,4 +1,6 @@
+  <br>
   <h3>Anggota</h3>
+  <hr>
   <h5><a href="?hal=register" class="btn btn-primary btn-sm">[+] anggota baru</a></h5>
    <table class="table table-dark table-striped table-sm">
     <thead>

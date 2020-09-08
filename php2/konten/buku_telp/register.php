@@ -1,4 +1,6 @@
+      <br>
       <h3>Register</h3>
+      <hr>
         <form class="needs-validation" novalidate action="?hal=simpan" method="POST">
 
           <div class="form-group row">
