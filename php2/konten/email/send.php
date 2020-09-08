@@ -2,56 +2,67 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-include ('PHPMailer/Exception.php');
-include ('PHPMailer/PHPMailer.php');
-include ('PHPMailer/SMTP.php');
 
-$email_pengirim = 'test@gmail.com';
-$nama_pengirim = 'schnee';
-$email_penerima = $_POST['email_penerima'];
-$subjek = $_POST['subjek'];
-$pesan = $_POST['pesan'];
-$file = $_FILES['file']['tmp_name'];
+include('phpmailer/Exception.php');
+include('phpmailer/PHPMailer.php');
+include('phpmailer/SMTP.php');
 
-$mail= new PHPMailer();
-
+$email_pengirim = 'schneer4@gmail.com'; 
+$nama_pengirim = 'schnee'; 
+$email_penerima = $_POST['email_penerima']; 
+$subjek = $_POST['subjek']; 
+$pesan = $_POST['pesan']; 
+$attachment = $_FILES['attachment']['name']; 
+$mail = new PHPMailer;
 $mail->isSMTP();
-$mail->isHTML(true);
-$mail->SMTPAuth=true;
-$mail->SMtpSecure='ssl';
+
 $mail->Host = 'smtp.gmail.com';
-$mail->Username = 'schnee';
-$mail->Password = 'test23';
+$mail->Username = $email_pengirim; 
+$mail->Password = 'schnee@23'; 
 $mail->Port = 465;
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = 'ssl';
 
 
-$mail->setFrom($email_pengirim, $email_penerima);
-$mail->addAddress($email_penerima, 'noreply');
+$mail->setFrom($email_pengirim, $nama_pengirim);
+$mail->addAddress($email_penerima, '');
+$mail->isHTML(true); 
 
-$mail->Subject=$subjek;
-$mail->Body=$pesan;
-	
-if(empty($file)){ 
+
+ob_start();
+include "content.php";
+$content = ob_get_contents(); 
+ob_end_clean();
+
+$mail->Subject = $subjek;
+$mail->Body = $content;
+
+if(empty($attachment)){ 
     $send = $mail->send();
+
     if($send){ 
-        header('location:?hal=message berhasil');
+        echo "<br><h3>pesan berhasil dikirim</h3><hr><br><a href='?hal=message'>Kembali ke Form</a>";
     }else{ 
-        header('location:?hal=message gagal');
+        echo "<br><h3>pesan gagal dikirim</h3><hr><br><a href='?hal=message'>Kembali ke Form</a>";
+        
     }
 }else{ 
-    $tmp = $_FILES['file']['tmp_name'];
-    $size = $_FILES['file']['size'];
+    $tmp = $_FILES['attachment']['tmp_name'];
+    $size = $_FILES['attachment']['size'];
+
     if($size <= 25000000){ 
-        $mail->addAttachment($tmp, $file);
+        $mail->addAttachment($tmp, $attachment); 
+
         $send = $mail->send();
+
         if($send){ 
-            header('location:?hal=message berhasil');
+            echo "<br><h3>pesan berhasil dikirim</h3><hr><br><a href='?hal=message'>Kembali ke Form</a>";
         }else{ 
-            header('location:?hal=message error');
-           
+            echo "<br><h3>pesan gagal dikirim</h3><hr><br><a href='?hal=message'>Kembali ke Form</a>";
+
         }
     }else{ 
-        header('location:?hal=message error');
+        echo "<br><h3>Ukuran file attachment maksimal 25 MB</h3><hr><br><a ?hal=message'>Kembali ke Form</a>";
     }
 }
- ?>
+?>

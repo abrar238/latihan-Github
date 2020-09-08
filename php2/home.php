@@ -1,7 +1,9 @@
 <?php
 if ($_GET['hal']=="home") {
 ?>
+<br>
 <h3>Dashbord</h3>
+<hr>
   <div class="row">
     <div class="col-sm">
 		  <div class="card text-white bg-info" >
@@ -138,6 +140,12 @@ elseif ($_GET['hal']=="message") {
 }
 elseif ($_GET['hal']=="kirim") {
 	include "konten/email/send.php";
+}
+elseif ($_GET['hal']=="content") {
+	include "konten/email/content.php";
+}
+elseif ($_GET['hal']=="maps") {
+	include "konten/maps/maps.php";
 }
  else {
 	"Bukan Home";

@@ -1,5 +1,6 @@
-
+  <br>
   <h3>Upload File</h3>
+  <hr>
   <form class="needs-validation" novalidate action="?hal=uploadfile" method="POST" enctype="multipart/form-data">
 
 <div class="form-group row">
